@@ -4,7 +4,5 @@
 you need to simply click on it. That's it. </h1>
 <br>
 <h3>Steps To Run Application</h3>
-<li>1). You have Python Setup </li>
-<li>2). Download this file in your folder</li>
-<li>3). Run this python file </li>
-<li>3). Then Simply click on it will give you screen shot </li> 
+<li>1). You go to chrome -> extension -> developermode-> simply Loadunpacked { Simple Upload this folder} </li>
+<li>2). Then Simply click on it will give you screen shot </li> 

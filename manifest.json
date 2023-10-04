@@ -1,13 +1,25 @@
 {
-    "name":"Screen Shot",
-    "version":"0.0.1",
-    "manifest_version":2,
-    "browser_action" : {
-        "default_popup" :"popup.html",
-        "default_icon": "logo.png"
-    },
-    "permissions": ["activeTab"],
+    "manifest_version": 3,
+    "name": "Screenshot Capture",
+    "version": "1.0",
+    "description": "Capture screenshots with a click",
+    "permissions": ["activeTab", "downloads"],
     "background": {
-        "service_worker": "background.js"
-    }
-}
+      "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+      },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
